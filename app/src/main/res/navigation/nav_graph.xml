@@ -12,8 +12,8 @@
         android:label="profile"
         tools:layout="@layout/profile__fragment" />
     <fragment
-        android:id="@+id/quotes"
+        android:id="@+id/quotesFragment"
         android:name="com.rana.mvvmmodelkotlin.ui.home.quotes.Quotes"
-        android:label="quotesfragment"
+        android:label="Quotes"
         tools:layout="@layout/quotes_fragment" />
 </navigation>

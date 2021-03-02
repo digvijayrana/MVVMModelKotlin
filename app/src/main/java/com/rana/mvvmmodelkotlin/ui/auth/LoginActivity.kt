@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProviders
 import com.rana.mvvmmodelkotlin.R
 import com.rana.mvvmmodelkotlin.data.db.entities.User
 import com.rana.mvvmmodelkotlin.databinding.ActivityLoginBinding
+
 import com.rana.mvvmmodelkotlin.ui.home.HomeActivity
 import com.rana.mvvmmodelkotlin.util.toast
 import kotlinx.android.synthetic.main.activity_login.*
@@ -24,7 +25,7 @@ class LoginActivity : AppCompatActivity(),AuthListner,KodeinAware {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding:ActivityLoginBinding= DataBindingUtil.setContentView(this,R.layout.activity_login)
+        val binding: ActivityLoginBinding = DataBindingUtil.setContentView(this,R.layout.activity_login)
         val viewModel= ViewModelProviders.of(this,factory).get(AuthViewModel::class.java)
         binding.viewmodel= viewModel
         viewModel.authListner=this
